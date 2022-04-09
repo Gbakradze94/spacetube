@@ -9,12 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NgxFileDropModule, NgxFileDropEntry } from 'ngx-file-drop';
 import { MatButtonModule } from '@angular/material/button';
-
+import { HeaderComponent } from './header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     UploadVideoComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,9 @@ import { MatButtonModule } from '@angular/material/button';
     FormsModule,
     HttpClientModule,
     NgxFileDropModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
